@@ -34,3 +34,5 @@ C:\Users\STEM\Downloads\D-BrowserProject\bin\Debug\D-browser.xml
 C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\Sandwhich.Form1.resources
 C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\Sandwhich.Resources.resources
 C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\D-browser.vbproj.GenerateResource.Cache
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\Sandwhich.History.resources
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\Sandwhich.Favorites.resources

@@ -35,7 +35,151 @@ D-browser
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_arrow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_cross">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_download">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_duplicate">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_edit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_excel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_file_gif">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_file_gif_tag">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_file_pdf">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_file_pdf_tag">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_heart">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_heartbreak">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_hidden">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_image">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_jpg">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_location">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_location_add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_minus">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_multiple">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_music">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_new">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_onenote">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_pdf">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_png">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_powerpoint">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_question">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_select">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_small">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_solid">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_solid_add">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_solid_cross">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_solid_move">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_text">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Sandwhich.My.Resources.Resources.appbar_page_upload">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

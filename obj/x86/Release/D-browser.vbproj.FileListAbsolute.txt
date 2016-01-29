@@ -16,3 +16,12 @@ E:\Deshon_comp_projects\D-browser\D-browser\bin\Release\D-browser.xml
 E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Release\Sandwhich.Form1.resources
 E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Release\Sandwhich.Resources.resources
 E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Release\D-browser.vbproj.GenerateResource.Cache
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Release\D-browser.exe
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Release\D-browser.xml
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Release\D-browser.pdb
+C:\Users\STEM\Downloads\D-BrowserProject\bin\Release\D-browser.exe
+C:\Users\STEM\Downloads\D-BrowserProject\bin\Release\D-browser.pdb
+C:\Users\STEM\Downloads\D-BrowserProject\bin\Release\D-browser.xml
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Release\Sandwhich.Form1.resources
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Release\Sandwhich.Resources.resources
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Release\D-browser.vbproj.GenerateResource.Cache
