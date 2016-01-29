@@ -1,0 +1,36 @@
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\bin\Debug\Sandwhich.exe
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\bin\Debug\Sandwhich.pdb
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\bin\Debug\Sandwhich.xml
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\obj\x86\Debug\Sandwhich.Form1.resources
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\obj\x86\Debug\Sandwhich.Resources.resources
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\obj\x86\Debug\D-browser.vbproj.GenerateResource.Cache
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\obj\x86\Debug\Sandwhich.exe
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\obj\x86\Debug\Sandwhich.xml
+C:\Users\STEM\AppData\Local\Temporary Projects\Sandwhich\obj\x86\Debug\Sandwhich.pdb
+F:\Deshon_comp_projects\D-browser\D-browser\bin\Debug\D-browser.exe
+F:\Deshon_comp_projects\D-browser\D-browser\bin\Debug\D-browser.pdb
+F:\Deshon_comp_projects\D-browser\D-browser\bin\Debug\D-browser.xml
+F:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\Sandwhich.Form1.resources
+F:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\Sandwhich.Resources.resources
+F:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.vbproj.GenerateResource.Cache
+F:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.exe
+F:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.xml
+F:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.pdb
+E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.exe
+E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.xml
+E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.pdb
+E:\Deshon_comp_projects\D-browser\D-browser\bin\Debug\D-browser.exe
+E:\Deshon_comp_projects\D-browser\D-browser\bin\Debug\D-browser.pdb
+E:\Deshon_comp_projects\D-browser\D-browser\bin\Debug\D-browser.xml
+E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\Sandwhich.Form1.resources
+E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\Sandwhich.Resources.resources
+E:\Deshon_comp_projects\D-browser\D-browser\obj\x86\Debug\D-browser.vbproj.GenerateResource.Cache
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\D-browser.exe
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\D-browser.xml
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\D-browser.pdb
+C:\Users\STEM\Downloads\D-BrowserProject\bin\Debug\D-browser.exe
+C:\Users\STEM\Downloads\D-BrowserProject\bin\Debug\D-browser.pdb
+C:\Users\STEM\Downloads\D-BrowserProject\bin\Debug\D-browser.xml
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\Sandwhich.Form1.resources
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\Sandwhich.Resources.resources
+C:\Users\STEM\Downloads\D-BrowserProject\obj\x86\Debug\D-browser.vbproj.GenerateResource.Cache
