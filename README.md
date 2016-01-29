@@ -7,7 +7,7 @@ IF you want you add to this project just know:
 
 Also i use and edit all of the VB files in visual studio. I definetly reccomend using this if you plan on helping edit.
 
-All that is here is the source code, NOT the application. You need a VB compiler to get an application. There will be an application posted later but not at this time.
+All that is here is the source code, NOT the application. You need a VB compiler to get an application. There is an application posted Under releases.
 
 Thank you, 
     miad2401 
