@@ -22,39 +22,51 @@ Partial Class Favorites
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lstFavorites = New System.Windows.Forms.ListBox()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnGoTo = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstFavorites
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(1, 1)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(414, 290)
-        Me.ListBox1.TabIndex = 0
+        Me.lstFavorites.FormattingEnabled = True
+        Me.lstFavorites.Location = New System.Drawing.Point(1, 1)
+        Me.lstFavorites.Name = "lstFavorites"
+        Me.lstFavorites.Size = New System.Drawing.Size(414, 290)
+        Me.lstFavorites.TabIndex = 0
         '
-        'Button1
+        'btnDelete
         '
-        Me.Button1.Location = New System.Drawing.Point(1, 298)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(92, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Delete selected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnDelete.Location = New System.Drawing.Point(1, 298)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(92, 23)
+        Me.btnDelete.TabIndex = 1
+        Me.btnDelete.Text = "Delete selected" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
+        'btnGoTo
+        '
+        Me.btnGoTo.Location = New System.Drawing.Point(99, 298)
+        Me.btnGoTo.Name = "btnGoTo"
+        Me.btnGoTo.Size = New System.Drawing.Size(75, 23)
+        Me.btnGoTo.TabIndex = 2
+        Me.btnGoTo.Text = "GoTo"
+        Me.btnGoTo.UseVisualStyleBackColor = True
         '
         'Favorites
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(416, 361)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.btnGoTo)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.lstFavorites)
         Me.Name = "Favorites"
         Me.Text = "Bookmarks"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lstFavorites As System.Windows.Forms.ListBox
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
+    Friend WithEvents btnGoTo As Button
 End Class

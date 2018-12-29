@@ -22,8 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblLoadInfo = New System.Windows.Forms.Label()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.NewToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -36,39 +35,40 @@ Partial Class Form1
         Me.PasteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.cmbUrl = New System.Windows.Forms.ComboBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
+        Me.btnAddFav = New System.Windows.Forms.Button()
+        Me.btnShowFav = New System.Windows.Forms.Button()
+        Me.btnShowHistory = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
+        Me.btnForward = New System.Windows.Forms.Button()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblLoadInfo
         '
-        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.Font = New System.Drawing.Font("Papyrus", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(160, 27)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 21)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Loading"
+        Me.lblLoadInfo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblLoadInfo.Font = New System.Drawing.Font("Ubuntu Mono", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLoadInfo.Location = New System.Drawing.Point(102, 26)
+        Me.lblLoadInfo.Name = "lblLoadInfo"
+        Me.lblLoadInfo.Size = New System.Drawing.Size(136, 21)
+        Me.lblLoadInfo.TabIndex = 6
+        Me.lblLoadInfo.Text = "Loading"
         '
         'WebBrowser1
         '
-        Me.WebBrowser1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WebBrowser1.Location = New System.Drawing.Point(2, 85)
+        Me.WebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WebBrowser1.Location = New System.Drawing.Point(2, 86)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(1348, 785)
+        Me.WebBrowser1.Size = New System.Drawing.Size(1360, 656)
         Me.WebBrowser1.TabIndex = 7
         Me.WebBrowser1.Url = New System.Uri("http://google.com", System.UriKind.Absolute)
         '
@@ -86,7 +86,6 @@ Partial Class Form1
         'NewToolStripButton
         '
         Me.NewToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.NewToolStripButton.Image = CType(resources.GetObject("NewToolStripButton.Image"), System.Drawing.Image)
         Me.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.NewToolStripButton.Name = "NewToolStripButton"
         Me.NewToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -95,7 +94,6 @@ Partial Class Form1
         'OpenToolStripButton
         '
         Me.OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.OpenToolStripButton.Image = CType(resources.GetObject("OpenToolStripButton.Image"), System.Drawing.Image)
         Me.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.OpenToolStripButton.Name = "OpenToolStripButton"
         Me.OpenToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -104,7 +102,6 @@ Partial Class Form1
         'SaveToolStripButton
         '
         Me.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.SaveToolStripButton.Image = CType(resources.GetObject("SaveToolStripButton.Image"), System.Drawing.Image)
         Me.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SaveToolStripButton.Name = "SaveToolStripButton"
         Me.SaveToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -113,7 +110,6 @@ Partial Class Form1
         'PrintToolStripButton
         '
         Me.PrintToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PrintToolStripButton.Image = CType(resources.GetObject("PrintToolStripButton.Image"), System.Drawing.Image)
         Me.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PrintToolStripButton.Name = "PrintToolStripButton"
         Me.PrintToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -127,7 +123,6 @@ Partial Class Form1
         'CutToolStripButton
         '
         Me.CutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CutToolStripButton.Image = CType(resources.GetObject("CutToolStripButton.Image"), System.Drawing.Image)
         Me.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CutToolStripButton.Name = "CutToolStripButton"
         Me.CutToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -136,7 +131,6 @@ Partial Class Form1
         'CopyToolStripButton
         '
         Me.CopyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CopyToolStripButton.Image = CType(resources.GetObject("CopyToolStripButton.Image"), System.Drawing.Image)
         Me.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.CopyToolStripButton.Name = "CopyToolStripButton"
         Me.CopyToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -145,7 +139,6 @@ Partial Class Form1
         'PasteToolStripButton
         '
         Me.PasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PasteToolStripButton.Image = CType(resources.GetObject("PasteToolStripButton.Image"), System.Drawing.Image)
         Me.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.PasteToolStripButton.Name = "PasteToolStripButton"
         Me.PasteToolStripButton.Size = New System.Drawing.Size(23, 26)
@@ -159,137 +152,136 @@ Partial Class Form1
         'HelpToolStripButton
         '
         Me.HelpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.HelpToolStripButton.Image = CType(resources.GetObject("HelpToolStripButton.Image"), System.Drawing.Image)
         Me.HelpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.HelpToolStripButton.Name = "HelpToolStripButton"
         Me.HelpToolStripButton.Size = New System.Drawing.Size(23, 26)
         Me.HelpToolStripButton.Text = "He&lp"
         '
-        'ComboBox1
+        'cmbUrl
         '
-        Me.ComboBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(160, 3)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(349, 21)
-        Me.ComboBox1.TabIndex = 10
+        Me.cmbUrl.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cmbUrl.FormattingEnabled = True
+        Me.cmbUrl.Location = New System.Drawing.Point(102, 2)
+        Me.cmbUrl.Name = "cmbUrl"
+        Me.cmbUrl.Size = New System.Drawing.Size(625, 21)
+        Me.cmbUrl.TabIndex = 10
         '
-        'TextBox1
+        'txtSearch
         '
-        Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(682, 3)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(228, 20)
-        Me.TextBox1.TabIndex = 11
+        Me.txtSearch.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtSearch.Location = New System.Drawing.Point(846, 2)
+        Me.txtSearch.Multiline = True
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(228, 20)
+        Me.txtSearch.TabIndex = 11
         '
-        'Button9
+        'btnAddFav
         '
-        Me.Button9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button9.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_location_add
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button9.Location = New System.Drawing.Point(1186, 2)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 53)
-        Me.Button9.TabIndex = 15
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btnAddFav.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnAddFav.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_location_add
+        Me.btnAddFav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAddFav.Location = New System.Drawing.Point(1238, 4)
+        Me.btnAddFav.Name = "btnAddFav"
+        Me.btnAddFav.Size = New System.Drawing.Size(50, 43)
+        Me.btnAddFav.TabIndex = 15
+        Me.btnAddFav.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnShowFav
         '
-        Me.Button8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button8.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_location
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button8.Location = New System.Drawing.Point(1267, 2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(83, 53)
-        Me.Button8.TabIndex = 14
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnShowFav.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnShowFav.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_location
+        Me.btnShowFav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnShowFav.Location = New System.Drawing.Point(1294, 4)
+        Me.btnShowFav.Name = "btnShowFav"
+        Me.btnShowFav.Size = New System.Drawing.Size(49, 43)
+        Me.btnShowFav.TabIndex = 14
+        Me.btnShowFav.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnShowHistory
         '
-        Me.Button7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button7.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_multiple
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.Location = New System.Drawing.Point(1078, 2)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(78, 53)
-        Me.Button7.TabIndex = 13
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnShowHistory.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnShowHistory.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_multiple
+        Me.btnShowHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnShowHistory.Location = New System.Drawing.Point(1186, 3)
+        Me.btnShowHistory.Name = "btnShowHistory"
+        Me.btnShowHistory.Size = New System.Drawing.Size(46, 45)
+        Me.btnShowHistory.TabIndex = 13
+        Me.btnShowHistory.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnSearch
         '
-        Me.Button6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button6.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_search
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.Location = New System.Drawing.Point(916, 3)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 52)
-        Me.Button6.TabIndex = 12
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnSearch.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSearch.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_search
+        Me.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSearch.Location = New System.Drawing.Point(1080, 3)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(47, 44)
+        Me.btnSearch.TabIndex = 12
+        Me.btnSearch.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnHome
         '
-        Me.Button5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button5.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_home_empty
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.Location = New System.Drawing.Point(997, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 53)
-        Me.Button5.TabIndex = 8
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnHome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnHome.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_home_empty
+        Me.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnHome.Location = New System.Drawing.Point(1133, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(47, 45)
+        Me.btnHome.TabIndex = 8
+        Me.btnHome.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnForward
         '
-        Me.Button3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_navigate_next
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(74, 3)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(80, 51)
-        Me.Button3.TabIndex = 4
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnForward.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnForward.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_navigate_next
+        Me.btnForward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnForward.Location = New System.Drawing.Point(51, 3)
+        Me.btnForward.Name = "btnForward"
+        Me.btnForward.Size = New System.Drawing.Size(45, 45)
+        Me.btnForward.TabIndex = 4
+        Me.btnForward.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnRefresh
         '
-        Me.Button4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_refresh
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Location = New System.Drawing.Point(597, 4)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(79, 51)
-        Me.Button4.TabIndex = 5
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnRefresh.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRefresh.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_refresh
+        Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnRefresh.Location = New System.Drawing.Point(791, 4)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(50, 43)
+        Me.btnRefresh.TabIndex = 5
+        Me.btnRefresh.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnBack
         '
-        Me.Button2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_navigate_previous
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(2, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(76, 51)
-        Me.Button2.TabIndex = 3
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnBack.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnBack.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_navigate_previous
+        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnBack.Location = New System.Drawing.Point(2, 3)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(43, 45)
+        Me.btnBack.TabIndex = 3
+        Me.btnBack.UseVisualStyleBackColor = True
         '
         'Button1
         '
         Me.Button1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button1.BackgroundImage = Global.Sandwhich.My.Resources.Resources.appbar_page_arrow
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(512, 4)
+        Me.Button1.Location = New System.Drawing.Point(733, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(79, 51)
+        Me.Button1.Size = New System.Drawing.Size(52, 43)
         Me.Button1.TabIndex = 2
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -297,21 +289,21 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.BackColor = System.Drawing.Color.Linen
         Me.ClientSize = New System.Drawing.Size(1362, 742)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.btnAddFav)
+        Me.Controls.Add(Me.btnShowFav)
+        Me.Controls.Add(Me.btnShowHistory)
+        Me.Controls.Add(Me.btnSearch)
+        Me.Controls.Add(Me.txtSearch)
+        Me.Controls.Add(Me.cmbUrl)
         Me.Controls.Add(Me.ToolStrip1)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.btnHome)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnForward)
+        Me.Controls.Add(Me.btnRefresh)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.lblLoadInfo)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "D-Browser"
@@ -321,13 +313,13 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnForward As System.Windows.Forms.Button
+    Friend WithEvents btnBack As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents lblLoadInfo As System.Windows.Forms.Label
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
-    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents NewToolStripButton As System.Windows.Forms.ToolStripButton
     Friend WithEvents OpenToolStripButton As System.Windows.Forms.ToolStripButton
@@ -339,11 +331,11 @@ Partial Class Form1
     Friend WithEvents PasteToolStripButton As System.Windows.Forms.ToolStripButton
     Friend WithEvents toolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents HelpToolStripButton As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button6 As System.Windows.Forms.Button
-    Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents cmbUrl As System.Windows.Forms.ComboBox
+    Friend WithEvents txtSearch As System.Windows.Forms.TextBox
+    Friend WithEvents btnSearch As System.Windows.Forms.Button
+    Friend WithEvents btnShowHistory As System.Windows.Forms.Button
+    Friend WithEvents btnShowFav As System.Windows.Forms.Button
+    Friend WithEvents btnAddFav As System.Windows.Forms.Button
 
 End Class
